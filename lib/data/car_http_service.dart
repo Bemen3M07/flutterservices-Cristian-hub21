@@ -1,4 +1,4 @@
-import 'car_model.dart';
+import '../model/car_model.dart';
 import 'package:http/http.dart' as http;
 // import 'package:rentcar/model/brand_model.dart';
 // import 'package:rentcar/model/car_model.dart';
@@ -6,7 +6,7 @@ import 'package:http/http.dart' as http;
 
 class CarHttpService {
   final String _serverUrl = "https://car-data.p.rapidapi.com/cars?limit=10&page=0";
-  final String _headerKey = "e6bd28c9a0msh15d943a3b3c074fp12e743jsn04f756b04a3a";
+  final String _headerKey = "e6bd28c9a0msh15d943a3b3c074fp12e743jsn04f756b04a3a"; 
   final String _headerHost = "car-data.p.rapidapi.com";
 
   /*
