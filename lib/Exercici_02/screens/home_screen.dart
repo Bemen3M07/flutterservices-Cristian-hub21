@@ -1,5 +1,7 @@
 
+import 'package:empty/Exercici_02/providers/counter_provider.dart';
 import 'package:flutter/material.dart';
+import 'package:provider/provider.dart';
 import '../page/page1.dart';
 import '../page/page2.dart';
 import '../page/page3.dart';
@@ -27,6 +29,11 @@ class _HomeScreenState extends State<HomeScreen> {
     return Scaffold(
       appBar: AppBar(
         title: const Text('Material App Bar'),
+        actions: [
+          TextButton(onPressed: null, child: Text(
+            context.watch<CounterProvider>().counter.toString(),
+          )),
+        ],
       ), // AppBar
       body: _pages[_selectedIndex],      
       bottomNavigationBar: BottomNavigationBar(
