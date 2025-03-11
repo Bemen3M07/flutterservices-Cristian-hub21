@@ -13,11 +13,11 @@ class CarHttpService {
   Obtenir la llista de cotxes
   */
   Future<List<CarsModel>> getCars() async {
-    //URL de l'endpoint: És la URL del servidor, més la URL de l'endpoint
+    //URL de l'endpoint: És la URL del servidor, més la URL de l'endpoint.
     var uri = Uri.parse(
-        "$_serverUrl/cars"); //Aquí hem de canviar el text de l'exmple per /cars
+        "$_serverUrl/cars"); //Aquí hem de canviar el text de l'exmple per /cars.
 
-    //Fem la petició GET i esperem la resposta
+    //Fem la petició GET i esperem la resposta.
     var response = await http.get(uri, headers: {
       "x-rapidapi-key": _headerKey, //Aquesta informació està a la "
       "x-rapidapi-host":

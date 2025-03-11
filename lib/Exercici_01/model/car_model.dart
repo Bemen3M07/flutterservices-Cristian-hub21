@@ -1,10 +1,10 @@
 import 'dart:convert';
 
-// Funció per obtenir una llista d'objectes de tipus CarsModel a partir d'un string json
+// Funció per obtenir una llista d'objectes de tipus CarsModel a partir d'un string json.
 List<CarsModel> carsModelFromJson(String str) => List<CarsModel>.from(
     json.decode(str).map((x) => CarsModel.fromMapToCarObject(x)));
 
-//Funció per obtenir un string json a partir d'una llista d'objectes de tipus CarsModel
+//Funció per obtenir un string json a partir d'una llista d'objectes de tipus CarsModel.
 String carsModelToJson(List<CarsModel> data) =>
     json.encode(List<dynamic>.from(data.map((x) => x.fromObjectToMap())));
 
