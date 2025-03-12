@@ -1,6 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:http/http.dart' as http;
-import 'package:api_provider_app/models/car_model.dart';
+import '../models/car_model.dart';
 
 class CarProvider with ChangeNotifier {
   List<CarModel> _cars = [];
@@ -17,7 +17,7 @@ class CarProvider with ChangeNotifier {
     final response = await http.get(
       Uri.parse(url),
       headers: {
-        "x-rapidapi-key": "6500c7126dmsh921a2abebf58478p1fd9f0jsn16ce086d3e04",
+        "x-rapidapi-key": "e6bd28c9a0msh15d943a3b3c074fp12e743jsn04f756b04a3a",
         "x-rapidapi-host": "car-data.p.rapidapi.com",
       },
     );

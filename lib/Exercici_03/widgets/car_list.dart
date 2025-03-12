@@ -1,6 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:provider/provider.dart';
-import 'package:api_provider_app/providers/car_provider.dart';
+import '../providers/car_provider.dart';
 
 class CarList extends StatelessWidget {
   @override
